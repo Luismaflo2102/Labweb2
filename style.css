@@ -1,0 +1,117 @@
+:root {
+    --color-primary: #007bff; /* Azul */
+    --color-secondary: #28a745; /* Verde claro */
+    --color-bg: #f8f9fa; /* Fondo claro */
+    --color-text: #333;
+    --color-link: #fff;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+.header {
+    background-color: var(--color-primary);
+    color: var(--color-link);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px var(--color-shadow);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    color: var(--color-link);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav ul li a:hover,
+.nav ul li a.active {
+    background-color: var(--color-secondary);
+}
+
+.main-content {
+    padding: 2rem;
+}
+
+.section {
+    display: none; /* Oculta todas las secciones por defecto */
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px var(--color-shadow);
+}
+
+.section.active {
+    display: block; /* Muestra la sección activa */
+}
+
+.section h2 {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-secondary);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.quick-access {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.quick-link {
+    background-color: var(--color-secondary);
+    color: var(--color-link);
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    width: 150px;
+    margin: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quick-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px var(--color-shadow);
+}
+
+.quick-link i {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.quick-link span {
+    display: block;
+    font-weight: bold;
+}
