@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sistema de Gestión Escolar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Gestion Escolar</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#estudiantes">Estudiantes</a></li>
+                <li><a href="#calificaciones">Calificaciones</a></li>
+                <li><a href="#asistencia">Asistencia</a></li>
+                <li><a href="#docentes">Docentes</a></li>
+                <li><a href="#reportes">Reportes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section id="inicio" class="section active">
+            <h2>Bienvenido a sistema de gestiòn escolar</h2>
+            <p>Tu sistema integral para la gestión escolar. Aquí puedes administrar estudiantes, docentes, calificaciones y mucho más.</p>
+            <div class="quick-access">
+                <a href="#estudiantes" class="quick-link">
+                    <i class="fas fa-user-graduate"></i>
+                    <span>Estudiantes</span>
+                </a>
+                <a href="#calificaciones" class="quick-link">
+                    <i class="fas fa-poll"></i>
+                    <span>Calificaciones</span>
+                </a>
+                <a href="#asistencia" class="quick-link">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Asistencia</span>
+                </a>
+                <a href="#docentes" class="quick-link">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span>Docentes</span>
+                </a>
+                <a href="#reportes" class="quick-link">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Reportes</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="estudiantes" class="section">
+            <h2>Registro de Estudiantes</h2>
+            <p>Aquí podrás gestionar toda la información de los estudiantes, desde sus datos personales hasta su historial académico.</p>
+            </section>
+
+        <section id="calificaciones" class="section">
+            <h2>Registro de Calificaciones</h2>
+            <p>Ingresa y administra las calificaciones de los estudiantes por materia y por parcial.</p>
+            </section>
+
+        <section id="asistencia" class="section">
+            <h2>Registro de Asistencia</h2>
+            <p>Controla la asistencia diaria de los estudiantes y genera reportes detallados.</p>
+            </section>
+
+        <section id="docentes" class="section">
+            <h2>Gestión de Docentes</h2>
+            <p>Administra la información del personal docente y su asignación a los diferentes grados.</p>
+            </section>
+
+        <section id="reportes" class="section">
+            <h2>Generación de Reportes</h2>
+            <p>Accede a reportes detallados de calificaciones, asistencia y datos administrativos.</p>
+            </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
